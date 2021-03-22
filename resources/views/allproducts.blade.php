@@ -1,3 +1,3 @@
 @foreach($products as $product)
-    <p>{{$product['name']}}</p>>
-@endfor
+    <p>{{$product->name}}</p>
+@endforeach
