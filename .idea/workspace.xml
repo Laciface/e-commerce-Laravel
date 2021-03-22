@@ -127,6 +127,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -147,11 +148,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616062091568</updated>
-      <workItem from="1616062092611" duration="2826000" />
+      <workItem from="1616062092611" duration="12241000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616421260983">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616421260983" />
+    <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1616425514868">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3840.1053@0.27.3840.1053" timestamp="1616425514868" />
   </component>
 </project>
