@@ -32,7 +32,7 @@
                             <h4><a href="">{{$item['data']['name']}}</a></h4>
                             <p>{{$item['data']['type']}}</p>
                             <p>{{$item['data']['description']}}</p>
-                            <p>itemId: {{$item['data']['id']}}</p>
+                            <p>ID: {{$item['data']['id']}}</p>
                         </td>
                         <td class="cart_price">
                             <p>{{$item['data']['price']}}</p>
@@ -40,12 +40,12 @@
                         <td class="cart_quantity">
                             <div class="cart_quantity_button">
                                 <a class="cart_quantity_up" href=""> + </a>
-                                <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                <input class="cart_quantity_input" type="text" name="quantity" value="{{ $item['quantity'] }}" autocomplete="off" size="2">
                                 <a class="cart_quantity_down" href=""> - </a>
                             </div>
                         </td>
                         <td class="cart_total">
-                            <p class="cart_total_price">$59</p>
+                            <p class="cart_total_price">{{$item['totalSinglePrice']}}</p>
                         </td>
                         <td class="cart_delete">
                             <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -124,10 +124,9 @@
             <div class="col-sm-6">
                 <div class="total_area">
                     <ul>
-                        <li>Cart Sub Total <span>$59</span></li>
-                        <li>Eco Tax <span>$2</span></li>
+                        <li>Cart Quantity <span>{{ $cartItems->totalQuantity }}</span></li>
                         <li>Shipping Cost <span>Free</span></li>
-                        <li>Total <span>$61</span></li>
+                        <li>Total <span>${{ $cartItems->totalPrice }}</span></li>
                     </ul>
                     <a class="btn btn-default update" href="">Update</a>
                     <a class="btn btn-default check_out" href="">Check Out</a>

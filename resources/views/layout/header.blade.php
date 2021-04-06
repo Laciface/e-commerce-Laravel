@@ -90,6 +90,7 @@
                             <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
                             <li><a href="{{ asset('checkout.html')}}"><i class="fa fa-crosshairs"></i> Checkout</a></li>
                             <li><a href="{{ route('cartProducts')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <li><a href="{{ route('clearCart')}}"><i class="fa fa-shopping-cart"></i> Clear</a></li>
                             <li><a href="{{ asset('login.html')}}"><i class="fa fa-lock"></i> Login</a></li>
                         </ul>
                     </div>
