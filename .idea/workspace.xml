@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f562f6a-2eeb-4206-ad10-98d713d595ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c2e81b2-aa04-4e14-96b4-c39b506e6087.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c2e81b2-aa04-4e14-96b4-c39b506e6087/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b660ad50-4e4c-43f0-a21b-ef1b0681ac34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b660ad50-4e4c-43f0-a21b-ef1b0681ac34.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,10 +200,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616437746274">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state x="2609" y="378" width="604" height="357" key="#Notifications" timestamp="1617695953688">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2609" y="378" width="604" height="357" key="#Notifications/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617695953688" />
+    <state x="2627" y="155" width="673" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617696001228">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616437746274" />
+    <state x="2627" y="155" width="673" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617696001228" />
     <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1616425514868">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
@@ -225,6 +217,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1616505174768" />
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom" timestamp="1617697097679">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697097679" />
+    <state width="1240" height="275" key="GridCell.Tab.0.center" timestamp="1617697097678">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697097678" />
+    <state width="1240" height="275" key="GridCell.Tab.0.left" timestamp="1617697097678">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697097678" />
+    <state width="1240" height="275" key="GridCell.Tab.0.right" timestamp="1617697097678">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697097678" />
     <state x="1992" y="121" width="1848" height="879" key="MergeDialog" timestamp="1616429244731">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
