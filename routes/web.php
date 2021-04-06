@@ -20,4 +20,4 @@ Route::get('/', function () {
 
 
 Route::get('products', [ProductController::class, 'index']);
-Route::get('product/addToCart/{id}', [ProductController::class, 'addProductToCart', 'as'=>'AddToCartProduct']);
+Route::get('product/addToCart/{id}', [ProductController::class, 'addProductToCart'])->name('AddToCartProduct');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Cart;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -36,6 +37,14 @@ class ProductController extends Controller
     }
 
     public function addProductToCart(Request $request, $id){
-        print_r($id);
+        $prevCart = $request->session()->get('cart');
+        $cart = new Cart($prevCart);
+
+        $product = Product::find($id);
+        $cart->addItem($id, $product);
+
+        $request->session()->put('cart', $cart);
+
+        dump($cart);
     }
 }
