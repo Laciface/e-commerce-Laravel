@@ -2,7 +2,7 @@
 
 @section('body')
 
-    <table>
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -25,9 +25,9 @@
                 <td>{{ $product['description'] }}</td>
                 <td>{{ $product['type'] }}</td>
                 <td>{{ $product['price'] }}</td>
-                <td><a href="{{ route('admin.products.editImageForm', ['id' => $product['id']]) }}">Edit image</a></td>
-                <td><a href="{{ route('admin.products.editForm', ['id' => $product['id']]) }}">Edit</a></td>
-                <td><a href="{{ route('admin.products.delete', ['id' => $product['id']]) }}">Remove</a></td>
+                <td><a class="btn btn-primary"{{--href="{{ route('admin.products.editImageForm', ['id' => $product['id']]) }}"--}}>Edit image</a></td>
+                <td><a class="btn btn-secondary"{{--href="{{ route('admin.products.editForm', ['id' => $product['id']]) }}"--}}>Edit</a></td>
+                <td><a class="btn btn-danger"{{--href="{{ route('admin.products.delete', ['id' => $product['id']]) }}"--}}>Remove</a></td>
             </tr>
             @endforeach
         </tbody>
