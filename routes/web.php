@@ -35,3 +35,10 @@ Route::get('product/deleteItemFromCart/{id}', [ProductController::class, 'delete
 Route::get('admin',[ProductController::class, 'openAdmin'])->name('openAdmin');
 
 Route::get('admin/products',[AdminProductsController::class, 'index'])->name('adminDisplayProducts');
+
+//display edit product form
+
+Route::get('admin/editProductForm/{id}',[AdminProductsController::class, 'editProductForm'])->name('adminEditProductForm');
+
+//display edit product image form
+Route::get('admin/editProductImageForm/{id}',[AdminProductsController::class, 'editProductImageForm'])->name('adminEditProductImageForm');
