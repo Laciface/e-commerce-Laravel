@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f562f6a-2eeb-4206-ad10-98d713d595ce" name="Default Changelist" comment="" />
+    <list default="true" id="8f562f6a-2eeb-4206-ad10-98d713d595ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/editProductImageForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editProductImageForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,19 +136,38 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pvSVBWaZ2Ekg0hPlz2FbohaU3H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/fonts" />
+      <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/resources/css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -147,11 +183,84 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616062091568</updated>
-      <workItem from="1616062092611" duration="2826000" />
+      <workItem from="1616062092611" duration="12241000" />
+      <workItem from="1616505160883" duration="17000" />
+      <workItem from="1617694690770" duration="336000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2609" y="378" width="604" height="357" key="#Notifications" timestamp="1617695953688">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2609" y="378" width="604" height="357" key="#Notifications/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617695953688" />
+    <state x="2627" y="155" width="673" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617696001228">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616437746274" />
+    <state x="2627" y="155" width="673" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617696001228" />
+    <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1616425514868">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3840.1053@0.27.3840.1053" timestamp="1616425514868" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616505174768">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1616505174768" />
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom" timestamp="1617697622379">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697622379" />
+    <state width="1240" height="275" key="GridCell.Tab.0.center" timestamp="1617697622379">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697622379" />
+    <state width="1240" height="275" key="GridCell.Tab.0.left" timestamp="1617697622379">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697622379" />
+    <state width="1240" height="275" key="GridCell.Tab.0.right" timestamp="1617697622379">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1240" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697622379" />
+    <state x="1992" y="121" width="1848" height="879" key="MergeDialog" timestamp="1616429244731">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="1992" y="121" width="1848" height="879" key="MergeDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616429244731" />
+    <state x="2547" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1616429244733">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="2547" y="316" width="728" height="482" key="MultipleFileMergeDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616429244733" />
+    <state x="2654" y="273" width="513" height="568" key="NewPhpClassDialog" timestamp="1617700108992">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2654" y="273" width="513" height="568" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617700108992" />
+    <state x="2711" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1617723835254">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2711" y="479" width="399" height="156" key="NewPhpFileDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617723835254" />
+    <state x="2697" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616429092440">
+      <screen x="0" y="27" width="3840" height="1053" />
+    </state>
+    <state x="2697" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.3840.1053@0.27.3840.1053" timestamp="1616429092440" />
+    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1617697356512">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2579" y="259" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617697356512" />
   </component>
 </project>
