@@ -79,5 +79,7 @@ class ProductController extends Controller
         $updatedCart->updatePriceAndQuantity();
 
         $request->session()->put('cart', $updatedCart);
+
+        return redirect()->route('cartProducts');
     }
 }
