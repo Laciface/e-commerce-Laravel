@@ -19,9 +19,10 @@
             {{ csrf_field() }}
 
         <div class="form-group" >
-            <label for="description">Update Image</label>
+            <label for="description">Update Image</label> <br>
             <input type="file" class="" id="image" name="image" placeholder="Image" value="{{$product->image}}" required>
         </div>
+            <br>
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         </form>
 </div>

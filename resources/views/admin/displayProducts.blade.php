@@ -20,7 +20,7 @@
             @foreach($products as $product)
             <tr>
                 <td>{{ $product['id'] }}</td>
-                <td><img src="<?php echo Storage::url($product['image'])?>" alt=""></td>
+                <td><img src="{{ Storage::url('images/' . $product['image'])}}" alt="" width="100" height="100"></td>
                 <td>{{ $product['name'] }}</td>
                 <td>{{ $product['description'] }}</td>
                 <td>{{ $product['type'] }}</td>
