@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\Cart;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
@@ -45,6 +46,22 @@ class ProductController extends Controller
 
         $request->session()->put('cart', $cart);
 
-        dump($cart);
+        //dump($cart);
+
+        return redirect()->route('allProducts');
+    }
+
+    public function showCart(){
+
+        $cart = Session::get('cart');
+        //if cart is not empty
+        if($cart){
+            dump($cart);
+            //return view('cartProducts', ['cartItems'=> $cart]);
+        // if cart is empty
+        }else {
+            echo 'cart is empty';
+            //return redirect()->route('allproducts');
+        }
     }
 }
