@@ -51,6 +51,11 @@ class ProductController extends Controller
         return redirect()->route('allProducts');
     }
 
+    public function clearCart(Request $request){
+            $request->session()->forget('cart');
+            //$request->session()->flash();
+    }
+
     public function showCart(){
 
         $cart = Session::get('cart');
@@ -62,4 +67,6 @@ class ProductController extends Controller
             return redirect()->route('allProducts');
         }
     }
+
+
 }
