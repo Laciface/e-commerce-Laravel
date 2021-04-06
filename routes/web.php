@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminProductsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
@@ -34,3 +35,17 @@ Route::get('product/deleteItemFromCart/{id}', [ProductController::class, 'delete
 Route::get('admin',[ProductController::class, 'openAdmin'])->name('openAdmin');
 
 Route::get('admin/products',[AdminProductsController::class, 'index'])->name('adminDisplayProducts');
+
+//display edit product form
+
+Route::get('admin/editProductForm/{id}',[AdminProductsController::class, 'editProductForm'])->name('adminEditProductForm');
+
+//display edit product image form
+Route::get('admin/editProductImageForm/{id}',[AdminProductsController::class, 'editProductImageForm'])->name('adminEditProductImageForm');
+
+
+// update product image
+Route::post('admin/productImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
+
+// update product
+Route::post('admin/updateProductImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
