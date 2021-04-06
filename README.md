@@ -10,6 +10,7 @@
 ## About the project
 I started to create an e-commerce website with Laravel. 
 Project's purposes for me:
+
     - dive into Laravel
     - get to know blade template engine 
     - build admin panel
