@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 
 Route::get('products', [ProductController::class, 'index']);
+Route::get('product/addtocart/{id}', [ProductController::class, 'addProductToCart']);
