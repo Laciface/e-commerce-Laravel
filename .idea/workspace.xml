@@ -7,8 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f562f6a-2eeb-4206-ad10-98d713d595ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/allproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/allproducts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,6 +239,10 @@
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="2547" y="316" width="728" height="482" key="MultipleFileMergeDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616429244733" />
+    <state x="2654" y="273" width="513" height="568" key="NewPhpClassDialog" timestamp="1617700108992">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2654" y="273" width="513" height="568" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617700108992" />
     <state x="2697" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616429092440">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
