@@ -9,8 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f562f6a-2eeb-4206-ad10-98d713d595ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/products/dress1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/products/dress2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/products/dress3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/allproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/allproducts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,22 +156,23 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/products" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/fonts" />
-      <recent name="$PROJECT_DIR$/resources/images" />
-      <recent name="$PROJECT_DIR$/resources/js" />
-      <recent name="$PROJECT_DIR$/resources/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/products" />
+      <recent name="$PROJECT_DIR$/resources/fonts" />
+      <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/resources/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,6 +192,7 @@
       <workItem from="1616062092611" duration="12241000" />
       <workItem from="1616505160883" duration="17000" />
       <workItem from="1617694690770" duration="336000" />
+      <workItem from="1617742696840" duration="1462000" />
     </task>
     <servers />
   </component>
@@ -215,13 +221,18 @@
     </state>
     <state x="2511" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1616437746274" />
     <state x="2627" y="155" width="673" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617696001228" />
+    <state x="2621" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617742742239">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2621" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617742742239" />
     <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1616425514868">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="2707" y="272" width="408" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3840.1053@0.27.3840.1053" timestamp="1616425514868" />
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616505174768">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="2655" y="291" width="424" height="491" key="FileChooserDialogImpl" timestamp="1617741302653">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2655" y="291" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1617741302653" />
     <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1616505174768" />
     <state width="1240" height="275" key="GridCell.Tab.0.bottom" timestamp="1617697622379">
       <screen x="1920" y="0" width="1920" height="1080" />
