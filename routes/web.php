@@ -19,4 +19,11 @@ Route::get('/', function () {
 });
 
 
-Route::get('products', [ProductController::class, 'index']);
+Route::get('products', [ProductController::class, 'index'])->name('allProducts');
+Route::get('product/addToCart/{id}', [ProductController::class, 'addProductToCart'])->name('AddToCartProduct');
+Route::get('cart', [ProductController::class, 'showCart'])->name('cartProducts');
+Route::get('clear', [ProductController::class, 'clearCart'])->name('clearCart');
+
+//delete item from cart
+
+Route::get('product/deleteItemFromCart/{id}', [ProductController::class, 'deleteItemFromCart'])->name('deleteItemFromCart');
