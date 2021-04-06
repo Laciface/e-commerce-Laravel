@@ -82,4 +82,8 @@ class ProductController extends Controller
 
         return redirect()->route('cartProducts');
     }
+
+    public function openAdmin(){
+        return view('admin');
+    }
 }

@@ -27,3 +27,10 @@ Route::get('clear', [ProductController::class, 'clearCart'])->name('clearCart');
 //delete item from cart
 
 Route::get('product/deleteItemFromCart/{id}', [ProductController::class, 'deleteItemFromCart'])->name('deleteItemFromCart');
+
+
+//admin panel
+
+Route::get('admin',[ProductController::class, 'openAdmin'])->name('openAdmin');
+
+Route::get('admin/products',[AdminProductsController::class, 'index'])->name('adminDisplayProducts');
