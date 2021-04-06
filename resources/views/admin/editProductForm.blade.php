@@ -25,7 +25,7 @@
                 <label for="name">Price</label>
                 <input type="text" class="form-control" id="price" name="price" placeholder="Price" value="{{$product->price}}" required>
             </div>
-            <buttton type="submit" name="submit" class="btn btn-default">Submit</buttton>
+            <buttton type="submit" name="submit" class="btn btn-primary">Submit</buttton>
         </form>
 
     </div>

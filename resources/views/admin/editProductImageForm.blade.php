@@ -22,7 +22,7 @@
             <label for="description">Update Image</label>
             <input type="file" class="" id="image" name="image" placeholder="Image" value="{{$product->image}}" required>
         </div>
-        <button type="submit" name="submit" class="btn btn-default">Submit</button>
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         </form>
 </div>
 @endsection
