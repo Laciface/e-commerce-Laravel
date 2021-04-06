@@ -25,8 +25,8 @@
                 <td>{{ $product['description'] }}</td>
                 <td>{{ $product['type'] }}</td>
                 <td>{{ $product['price'] }}</td>
-                <td><a class="btn btn-primary"{{--href="{{ route('admin.products.editProductImageForm', ['id' => $product['id']]) }}"--}}>Edit image</a></td>
-                <td><a class="btn btn-secondary"{{--href="{{ route('admin.products.editProductForm', ['id' => $product['id']]) }}"--}}>Edit</a></td>
+                <td><a class="btn btn-primary" href="{{ route('adminEditProductImageForm', ['id' => $product['id']]) }}">Edit image</a></td>
+                <td><a class="btn btn-secondary" href="{{ route('adminEditProductForm', ['id' => $product['id']]) }}">Edit</a></td>
                 <td><a class="btn btn-danger"{{--href="{{ route('admin.products.deleteProduct', ['id' => $product['id']]) }}"--}}>Remove</a></td>
             </tr>
             @endforeach
