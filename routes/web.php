@@ -44,8 +44,8 @@ Route::get('admin/editProductForm/{id}',[AdminProductsController::class, 'editPr
 Route::get('admin/editProductImageForm/{id}',[AdminProductsController::class, 'editProductImageForm'])->name('adminEditProductImageForm');
 
 
-// update product image
-Route::post('admin/productImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
-
 // update product
+Route::post('admin/updateProduct/{id}', [AdminProductsController::class, 'updateProduct'])->name('adminUpdateProduct');
+
+// update product image
 Route::post('admin/updateProductImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
