@@ -33,9 +33,8 @@ Project's purposes for me:
     DB_PASSWORD=
     
 7. fill the products table with some examle:
-    - 1,summer dress,kids dress for summer,dress1.jpeg,dress,30,2021-04-06 21:02:06
-    - 2,green dress,kids dress for summer,dress2.jpeg,dress,40,2021-04-06 21:02:06
-    - 3,pink dress,kids dress for summer,dress3.jpeg,dress,50,2021-04-06 21:02:06
+    - run data.sql file
+    
 9. php artisan storage:link
 9. php artisan serve
 10. generate api key    
