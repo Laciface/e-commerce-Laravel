@@ -49,3 +49,6 @@ Route::post('admin/updateProduct/{id}', [AdminProductsController::class, 'update
 
 // update product image
 Route::post('admin/updateProductImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
+
+//display create product form
+Route::get('admin/createProductForm',[AdminProductsController::class, 'createProductForm'])->name('adminCreateProductForm');
