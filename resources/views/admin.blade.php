@@ -56,10 +56,10 @@
     </button>
     <ul style="flex-direction: row;  " class="navbar-nav px-3">
         <li style="margin-right: 15px" class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/">Home</a>
         </li>
         <li style="margin-right: 15px" class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Dashboard</a>
+            <a class="nav-link" href="/admin/products">Dashboard</a>
         </li>
         <li style="margin-right: 15px" class="nav-item text-nowrap">
             <a class="nav-link" href="#">Settings</a>
@@ -80,13 +80,13 @@
             <div class="position-sticky pt-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="/admin/products">
                             <span data-feather="home"></span>
                             Overview
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/createProductForm">
                             <span data-feather="file"></span>
                             Insert
                         </a>
