@@ -9,8 +9,8 @@
                 <th>Image</th>
                 <th>Name</th>
                 <th>Description</th>
-                <th>Price</th>
                 <th>Type</th>
+                <th>Price</th>
                 <th>Edit Image</th>
                 <th>Edit</th>
                 <th>Remove</th>
