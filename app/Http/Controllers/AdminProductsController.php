@@ -81,23 +81,18 @@ class AdminProductsController extends Controller
         Validator::make($request->all(), ['image' => "required|image|mimes:jpg,png,jpeg|max:5000"])->validate();
 
         $image = $request->file('image');
-        $filename = str_replace(' ', '', $request->input('name')) . '.'. $request->file('image')->getClientOriginalExtension();;
-        $location = __DIR__ . '/storage/app/public/images/' . $filename;
-        Image::make($image)->resize(800, 600)->save($location);
+        $fileName = str_replace(' ', '', $request->input('name')) . '.' . $image->getClientOriginalExtension();
 
+        $img = Image::make($image->getRealPath());
+        $img->resize(120, 120, function ($constraint) {
+            $constraint->aspectRatio();
+        });
 
+        $img->stream();
 
-        /*$path = 'public/images';
-        $request->file('image')->store($path);
-        $ext = $request->file('image')->getClientOriginalExtension();
-        $stringImageReformat = str_replace(' ', '', $request->input('name'));
-        $image = $stringImageReformat . '.' . $ext;*/
+        Storage::disk('local')->put('public/images/'. $fileName, $img);
 
-        /*Storage::disk('local')->put($image, 'Contents');*/
-        /*Storage::disk('local')->put($path . $image, 'Contents');*/
-        /*Storage::disk('local')->put($path . $image, (string)$pic->encode('png', 95), $image);*/
-
-        $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $filename, 'price' => $price);
+        $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $fileName, 'price' => $price);
         DB::table('products')->insert($arrayToInsert);
 
         return redirect()->route('adminDisplayProducts');
