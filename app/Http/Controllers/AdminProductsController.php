@@ -82,15 +82,12 @@ class AdminProductsController extends Controller
         $image = $request->file('image');
         $fileName = str_replace(' ', '', $request->input('name')) . '.' . $image->getClientOriginalExtension();
 
-        $request->image->storeAs('public/images/', $fileName);
-
-        // other opportunity for save an image
-            /*$img = Image::make($image->getRealPath());
-            $img->resize(120, 120, function ($constraint) {
-                $constraint->aspectRatio();
-            });
-            $img->stream();
-            Storage::disk('local')->put('public/images/'. $fileName, $img);*/ // or File::get($request->image) instead of $img
+        $img = Image::make($image->getRealPath());
+        $img->resize(120, 120, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        $img->stream();
+        Storage::disk('local')->put('public/images/'. $fileName, $img); // or File::get($request->image) instead of $img
 
         $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $fileName, 'price' => $price);
         DB::table('products')->insert($arrayToInsert);
