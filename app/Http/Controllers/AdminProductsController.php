@@ -90,7 +90,7 @@ class AdminProductsController extends Controller
                 $constraint->aspectRatio();
             });
             $img->stream();
-            Storage::disk('local')->put('public/images/'. $fileName, $img);*/
+            Storage::disk('local')->put('public/images/'. $fileName, $img);*/ // or File::get($request->image) instead of $img
 
         $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $fileName, 'price' => $price);
         DB::table('products')->insert($arrayToInsert);
