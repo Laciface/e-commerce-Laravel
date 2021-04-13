@@ -49,3 +49,12 @@ Route::post('admin/updateProduct/{id}', [AdminProductsController::class, 'update
 
 // update product image
 Route::post('admin/updateProductImage/{id}', [AdminProductsController::class, 'updateProductImage'])->name('adminUpdateProductImage');
+
+//display create product form
+Route::get('admin/createProductForm',[AdminProductsController::class, 'createProductForm'])->name('adminCreateProductForm');
+
+//insert product to database
+Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProduct'])->name('insertProduct');
+
+//delete product
+Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteProduct'])->name('deleteProduct');

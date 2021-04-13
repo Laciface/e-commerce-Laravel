@@ -8,7 +8,8 @@ use App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\File;
-use  Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
+use Intervention\Image\Facades\Image;
 
 class AdminProductsController extends Controller
 {
@@ -52,6 +53,60 @@ class AdminProductsController extends Controller
         } else {
             return 'no image was selected';
         }
+    }
+
+    public function updateProduct(Request $request, $id){
+        $name = $request->input('name');
+        $description = $request->input('description');
+        $type = $request->input('type');
+        $price = substr($request->input('price'), 1);
+
+        $arrayToUpdate = array('name' => $name, 'description' => $description, 'type'=> $type, 'price'=> $price);
+        DB::table('products')->where('id', $id)->update($arrayToUpdate);
+
+        return redirect()->route('adminDisplayProducts');
+    }
+
+    public function createProductForm(){
+        return view('admin.createProductForm');
+    }
+
+    public function insertProduct(Request $request){
+        $name = $request->input('name');
+        $description = $request->input('description');
+        $type = $request->input('type');
+        $price = $request->input('price');
+
+        Validator::make($request->all(), ['image' => "required|image|mimes:jpg,png,jpeg|max:5000"])->validate();
+
+        $image = $request->file('image');
+        $fileName = str_replace(' ', '', $request->input('name')) . '.' . $image->getClientOriginalExtension();
+
+        $img = Image::make($image->getRealPath());
+        $img->resize(120, 120, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        $img->stream();
+        Storage::disk('local')->put('public/images/'. $fileName, $img); // or File::get($request->image) instead of $img
+
+        $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $fileName, 'price' => $price);
+        DB::table('products')->insert($arrayToInsert);
+
+        return redirect()->route('adminDisplayProducts');
+    }
+
+    public function deleteProduct($id){
+        $product = Product::find($id);
+
+        //delete picture from storage
+        $exists = Storage::disk('local')->exists("public/images/$product->image");
+        if($exists){
+            Storage::delete('public/images/' . $product->image);
+        }
+        //delete product from database
+        DB::table('products')->delete($id); // also possible way: Product::destroy($id)
+
+        return redirect()->route('adminDisplayProducts');
     }
 }
 

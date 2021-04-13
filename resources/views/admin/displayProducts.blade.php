@@ -9,8 +9,8 @@
                 <th>Image</th>
                 <th>Name</th>
                 <th>Description</th>
-                <th>Price</th>
                 <th>Type</th>
+                <th>Price</th>
                 <th>Edit Image</th>
                 <th>Edit</th>
                 <th>Remove</th>
@@ -27,7 +27,7 @@
                 <td>{{ $product['price'] }}</td>
                 <td><a class="btn btn-primary" href="{{ route('adminEditProductImageForm', ['id' => $product['id']]) }}">Edit image</a></td>
                 <td><a class="btn btn-secondary" href="{{ route('adminEditProductForm', ['id' => $product['id']]) }}">Edit</a></td>
-                <td><a class="btn btn-danger"{{--href="{{ route('admin.products.deleteProduct', ['id' => $product['id']]) }}"--}}>Remove</a></td>
+                <td><a class="btn btn-danger" href="{{ route('deleteProduct', ['id' => $product['id']]) }}">Remove</a></td>
             </tr>
             @endforeach
         </tbody>
