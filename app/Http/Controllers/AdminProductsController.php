@@ -77,20 +77,20 @@ class AdminProductsController extends Controller
         $type = $request->input('type');
         $price = $request->input('price');
 
-
         Validator::make($request->all(), ['image' => "required|image|mimes:jpg,png,jpeg|max:5000"])->validate();
 
         $image = $request->file('image');
         $fileName = str_replace(' ', '', $request->input('name')) . '.' . $image->getClientOriginalExtension();
 
-        $img = Image::make($image->getRealPath());
-        $img->resize(120, 120, function ($constraint) {
-            $constraint->aspectRatio();
-        });
+        $request->image->storeAs('public/images/', $fileName);
 
-        $img->stream();
-
-        Storage::disk('local')->put('public/images/'. $fileName, $img);
+        // other opportunity for save an image
+            /*$img = Image::make($image->getRealPath());
+            $img->resize(120, 120, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+            $img->stream();
+            Storage::disk('local')->put('public/images/'. $fileName, $img);*/
 
         $arrayToInsert = array('name'=>$name, 'description' =>$description, 'type' => $type, 'image' => $fileName, 'price' => $price);
         DB::table('products')->insert($arrayToInsert);
