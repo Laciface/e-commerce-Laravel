@@ -55,3 +55,6 @@ Route::get('admin/createProductForm',[AdminProductsController::class, 'createPro
 
 //insert product to database
 Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProduct'])->name('insertProduct');
+
+//delete product
+Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteProduct'])->name('deleteProduct');
