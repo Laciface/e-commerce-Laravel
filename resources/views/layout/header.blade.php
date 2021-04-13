@@ -95,6 +95,7 @@
 --}}
                             <li><a href="{{ route('registrationPage') }}"><i class="fa fa-lock"></i> Sign Up</a></li>
                             <li><a href="{{ route('loginPage') }}"><i class="fa fa-lock"></i> Login</a></li>
+                            <li><a href="{{ route('logout') }}"><i class="fa fa-lock"></i> Logout</a></li>
                         </ul>
                     </div>
                 </div>

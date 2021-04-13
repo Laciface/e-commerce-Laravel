@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
@@ -38,7 +39,8 @@ class UserController extends Controller
         return view('auth.login');
     }
 
-    public function login(Request $request){
+    public function login(Request $request)
+    {
         $data = [
             'email' => $request->input('email'),
             'password' => $request->input('password')
@@ -49,13 +51,13 @@ class UserController extends Controller
             $user = auth()->user();
             $products = Product::all();
             return view('allproducts', compact("token", "user", "products"));
-            /*return response()->json([
-                'token' => $token,
-                'user' => auth()->user(),
-                'email' => $request->email
-            ], 200);
-        } else {
-            return response()->json(['error' => 'Unauthorised'], 401);*/
         }
     }
+
+    public function logout(){
+        Auth::logout();
+        $products = Product::all();
+        return redirect()->route('allProducts', compact("products"));
+    }
+
 }
