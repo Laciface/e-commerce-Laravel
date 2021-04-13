@@ -12,7 +12,7 @@
             </div>
         @endif
         <h2>Create new product</h2>
-        <form action="/admin/createProductForm" method="post" enctype="multipart/form-data">
+        <form action="/admin/insertProduct" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
 
             <div class="form-group" >

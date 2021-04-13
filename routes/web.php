@@ -52,3 +52,6 @@ Route::post('admin/updateProductImage/{id}', [AdminProductsController::class, 'u
 
 //display create product form
 Route::get('admin/createProductForm',[AdminProductsController::class, 'createProductForm'])->name('adminCreateProductForm');
+
+//insert product to database
+Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProduct'])->name('insertProduct');
