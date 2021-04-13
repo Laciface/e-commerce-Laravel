@@ -69,7 +69,8 @@ Route::get('/registrationPage', [UserController::class, 'showRegForm'])->name('r
 Route::post('/registration', [UserController::class, 'registration'])->name('register');
 
 //login
-
+Route::get('/loginPage', [UserController::class, 'showLoginForm'])->name('loginPage');
+Route::post('/login', [UserController::class, 'login']);
 
 
 

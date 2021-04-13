@@ -2,11 +2,6 @@
 
 @section('center')
 
-{{--    <h1>center of the page</h1>
-@foreach($products as $product)
-    <p class="text-center">{{$product->name}}</p>
-    <p>{{$product->price}}</p>
-@endforeach--}}
 
 <div class="header-bottom"><!--header-bottom-->
     <div class="container">
@@ -40,6 +35,9 @@
                         </li>
                         <li><a href="404.html">404</a></li>
                         <li><a href="contact-us.html">Contact</a></li>
+                        @if(isset($user))
+                            <li><h1> Welcome {{ $user->name}} !</h1></li>
+                        @endif
                     </ul>
                 </div>
             </div>
