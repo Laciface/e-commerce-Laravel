@@ -97,5 +97,19 @@ class AdminProductsController extends Controller
 
         return redirect()->route('adminDisplayProducts');
     }
+
+    public function deleteProduct($id){
+        $product = Product::find($id);
+
+        //delete picture from storage
+        $exists = Storage::disk('local')->exists("public/images/$product->image");
+        if($exists){
+            Storage::delete('public/images/' . $product->image);
+        }
+        //delete product from database
+        DB::table('products')->delete($id); // also possible way: Product::destroy($id)
+
+        return redirect()->route('adminDisplayProducts');
+    }
 }
 
