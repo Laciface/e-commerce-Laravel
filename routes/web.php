@@ -58,3 +58,4 @@ Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProdu
 
 //delete product
 Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteProduct'])->name('deleteProduct');
+
