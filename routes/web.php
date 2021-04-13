@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminProductsController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
@@ -58,4 +59,13 @@ Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProdu
 
 //delete product
 Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteProduct'])->name('deleteProduct');
+
+
+//authentication
+
+//registration
+//Route::post('/registration', )
+//login
+
+
 
