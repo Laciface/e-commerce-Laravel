@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminProductsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,8 +65,12 @@ Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteP
 //authentication
 
 //registration
-//Route::post('/registration', )
+Route::get('/registrationPage', [UserController::class, 'showRegForm'])->name('registrationPage');
+Route::post('/registration', [UserController::class, 'registration'])->name('register');
+
 //login
+
+
 
 
 

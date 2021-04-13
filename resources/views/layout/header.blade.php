@@ -93,6 +93,7 @@
 {{--
                             <li><a href="{{ route('clearCart')}}"><i class="fa fa-shopping-cart"></i> Clear</a></li>
 --}}
+                            <li><a href="{{ route('registrationPage') }}"><i class="fa fa-lock"></i> Sign Up</a></li>
                             <li><a href="{{ asset('login.html')}}"><i class="fa fa-lock"></i> Login</a></li>
                         </ul>
                     </div>
