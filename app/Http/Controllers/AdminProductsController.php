@@ -77,7 +77,24 @@ class AdminProductsController extends Controller
         $type = $request->input('type');
         $price = $request->input('price');
 
-        Validator::make($request->all(), ['image' => "required|image|mimes:jpg,png,jpeg|max:5000"])->validate();
+
+        $this->validate($request,
+            [
+            'name' => "required|min:5",
+            'description' => "required",
+            'type' => "required",
+            'image' => "required|image|mimes:jpg,png,jpeg|max:5000"
+            ],
+            [
+                'name.required' => 'The name is required',
+                'name.min' => 'The name must has at least 5 chars',
+                'description.required' => 'The description is required',
+                'type.required' => 'The type is required',
+                'image.required' => 'The image is required',
+                'image.image' => 'This should be an image file',
+                'image.mimes' => 'The allowed extensions: jpg,png,jpeg',
+                'image.max' => 'The allowed file size is 5000 bite'
+            ]);
 
         $image = $request->file('image');
         $fileName = str_replace(' ', '', $request->input('name')) . '.' . $image->getClientOriginalExtension();
