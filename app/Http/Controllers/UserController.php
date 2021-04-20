@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Product;
+use App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -24,10 +25,19 @@ class UserController extends Controller
 
         Validator::make($request->all(), [
             'name' => 'required|min:4',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users',
             'password'=> 'required|min:5'
-        ])->validate();
-
+        ],
+            [
+                'name.required' => 'Name is required',
+                'name.min' => 'name must has at least 4 chars',
+                'email.required' => 'Email is required',
+                'email.email' => 'This is not a valid email address',
+                'email.unique' => 'This email address has already taken',
+                'password.required'=> 'Password is required',
+                'password.min'=> 'Password must has at least 5 chars'
+            ]
+        )->validate();
 
         $arrayToInsert = array('name'=>$name, 'email' =>$email, 'password'=> $password);
         DB::table('users')->insert($arrayToInsert);

@@ -77,7 +77,6 @@ class AdminProductsController extends Controller
         $type = $request->input('type');
         $price = $request->input('price');
 
-
         $this->validate($request,
             [
             'name' => "required|min:5",
