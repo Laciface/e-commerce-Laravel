@@ -47,4 +47,4 @@ Project's purposes for me:
 - delete from cart (click 'X' in cart )
 - go to admin panel (click Admin Panel button)
 - edit image
-- edit description(not implemented yet)
+- edit description
