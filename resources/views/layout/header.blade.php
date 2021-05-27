@@ -92,10 +92,14 @@
                             <li><a href="{{ route('cartProducts')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 {{--
                             <li><a href="{{ route('clearCart')}}"><i class="fa fa-shopping-cart"></i> Clear</a></li>
---}}
-                            <li><a href="{{ route('registrationPage') }}"><i class="fa fa-lock"></i> Sign Up</a></li>
-                            <li><a href="{{ route('loginPage') }}"><i class="fa fa-lock"></i> Login</a></li>
-                            <li><a href="{{ route('logout') }}"><i class="fa fa-lock"></i> Logout</a></li>
+--}}                        @if(!isset($user))
+                                <li><a href="{{ route('registrationPage') }}"><i class="fa fa-lock"></i> Sign Up</a></li>
+                                <li><a href="{{ route('loginPage') }}"><i class="fa fa-lock"></i> Login</a></li>
+                            @endif
+
+                            @if(isset($user))
+                                <li><a href="{{ route('logout') }}"><i class="fa fa-lock"></i> Logout</a></li>
+                            @endif
                         </ul>
                     </div>
                 </div>
