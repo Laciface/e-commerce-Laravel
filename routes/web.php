@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminProductsController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,4 +60,20 @@ Route::post('admin/insertProduct', [AdminProductsController::class, 'insertProdu
 
 //delete product
 Route::get('admin/deleteProduct/{id}', [AdminProductsController::class, 'deleteProduct'])->name('deleteProduct');
+
+
+//authentication
+
+//registration
+Route::get('/registrationPage', [UserController::class, 'showRegForm'])->name('registrationPage');
+Route::post('/registration', [UserController::class, 'registration'])->name('register');
+
+//login
+Route::get('/loginPage', [UserController::class, 'showLoginForm'])->name('loginPage');
+Route::post('/login', [UserController::class, 'login']);
+
+//logout
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+
+
 
