@@ -2,7 +2,6 @@
 
 @section('center')
 
-
 <div class="header-bottom"><!--header-bottom-->
     <div class="container">
         <div class="row">
@@ -35,8 +34,8 @@
                         </li>
                         <li><a href="404.html">404</a></li>
                         <li><a href="contact-us.html">Contact</a></li>
-                        @if(isset($user))
-                            <li><h1> Welcome {{ $user->name}} !</h1></li>
+                        @if(isset($_SESSION['user']))
+                            <li><h1> Welcome {{ $_SESSION['user']}} !</h1></li>
                         @endif
                     </ul>
                 </div>

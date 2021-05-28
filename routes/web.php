@@ -17,11 +17,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
-
 Route::get('/', [ProductController::class, 'index'])->name('allProducts');
 Route::get('product/addToCart/{id}', [ProductController::class, 'addProductToCart'])->name('AddToCartProduct');
 Route::get('cart', [ProductController::class, 'showCart'])->name('cartProducts');
@@ -36,7 +31,7 @@ Route::get('product/deleteItemFromCart/{id}', [ProductController::class, 'delete
 
 Route::get('admin',[ProductController::class, 'openAdmin'])->name('openAdmin');
 
-Route::get('admin/products',[AdminProductsController::class, 'index'])->name('adminDisplayProducts');
+Route::get('admin/products',[AdminProductsController::class, 'index'])->name('adminDisplayProducts')->middleware('restrictToAdmin');
 
 //display edit product form
 

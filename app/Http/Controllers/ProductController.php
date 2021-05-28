@@ -12,6 +12,7 @@ class ProductController extends Controller
 {
     public function index()
     {
+        session_start();
         /**
          * example without database
          */
@@ -57,7 +58,7 @@ class ProductController extends Controller
     }
 
     public function showCart(){
-
+        session_start();
         $cart = Session::get('cart');
         //if cart is not empty
         if($cart){
