@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\File;
@@ -13,9 +14,12 @@ use Intervention\Image\Facades\Image;
 
 class AdminProductsController extends Controller
 {
+
+
+
     public function index(){
 
-        $products = Product::all();
+        $products = Product::paginate(2);
 
         return view('admin.displayProducts', ['products' => $products]);
     }

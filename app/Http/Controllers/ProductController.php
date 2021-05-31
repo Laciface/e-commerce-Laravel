@@ -33,7 +33,7 @@ class ProductController extends Controller
          *
          */
 
-        $products = Product::all();
+        $products = Product::paginate(3);
 
         return view('allproducts', compact("products"));
     }
